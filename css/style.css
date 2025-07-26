@@ -1,0 +1,170 @@
+@charset "utf-8";
+
+html{
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    font-family: "Noto Sans JP", sans-serif;
+}
+/* *{
+    border: 1px solid rgb(255, 0, 0);
+} */
+/* 文字の基本設定 */
+header h1{
+    font-size: 4.5rem;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-style: italic;
+}
+header div.header_title p{
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    line-height: 1;
+    text-align: center;
+}
+p.release_date{
+    font-size: 3.5rem;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+}
+p.release_date span{
+    font-size: 5rem;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+}
+main section.video h2{
+    font-size: 4rem;
+    font-weight: 700;
+    font-style: italic;
+    color: rgb(255, 248, 51);
+}
+section.img_fixed h2{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 700;
+}
+section.img_fixed p{
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+section.characters h2{
+    font-size: 2rem;
+    font-weight: 600;
+    font-style: italic;
+}
+footer p.p_copy{
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+}
+/* レイアウトの設定 */
+/* ーーーーーーーーーーーーーーーーーーーヘッダーの設定ーーーーーーーーーーーーーーーーーーー */
+header{
+    background-image: url(../img/f1_main.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header div.header_title h1{
+    margin-bottom: 1em;
+}
+/* ーーーーーーーーーーーーーーーーーーーメインの設定ーーーーーーーーーーーーーーーーーーー */
+main section.video{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main section.video iframe{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+/* ーーーーーーーーーーーーーーーーーーーimg_fixedの設定ーーーーーーーーーーーーーーーーーーー */
+section.img_fixed{
+    background-image: url(../img/Window_img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section.img_fixed div{
+    text-align: center;
+}
+section.img_fixed div h2{
+    margin-bottom: 1em;
+}
+section.img_fixed div p{
+    width: 500px;
+}
+/* ーーーーーーーーーーーーーーーーーーーキャスト一覧の設定ーーーーーーーーーーーーーーーーーーー */
+section.characters{
+    display: flex;
+    justify-content: center;
+}
+section.characters div h2{
+    margin-top: 1em;
+    margin-left: 5rem;
+}
+div.characters_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    margin: 0 5rem 3rem 5rem;
+}
+div.characters_grid div p img{
+    border-radius: 20px;
+}
+div.characters_grid div.more_character{
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* /* ーーーーーーーーーーーーーーーーーーーリンクの設定ーーーーーーーーーーーーーーーーーーー */ */
+div.characters_grid div.more_character p a{
+    color: rgb(0, 0, 201);
+}
+div.characters_grid div.more_character p a:link{
+    color: rgb(0, 0, 201);
+}
+div.characters_grid div.more_character p a:visited{
+    color: rgb(0, 0, 201);
+}
+div.characters_grid div.more_character p a:hover{
+    color: rgb(0, 0, 201);
+    text-decoration: underline;
+}
+div.characters_grid div.more_character p a:active{
+    color: rgb(0, 0, 201);
+    text-decoration: underline;
+}
+div.characters_grid div p img{
+    margin-top: 2rem;
+    width: 25vw;
+}
+div.characters_grid div p{
+    text-align: center;
+}
+/* ーーーーーーーーーーーーーーーーーーーフッターの設定ーーーーーーーーーーーーーーーーーーー */
+footer{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+}
+footer p img{
+    width: 200px;
+}
